@@ -94,10 +94,19 @@ header {
 
 @media (max-width: 576px) { 
     
+    *{
+        font-size: 1em;
+    }
+
     .navbar .nav-link {
         text-align: center !important;
     }
 
+    .intro h1 {
+        text-transform: none !important;
+    
+    }
+    
     .img-animation{
         opacity: 0;
     }
