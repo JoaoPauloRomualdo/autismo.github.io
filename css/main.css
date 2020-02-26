@@ -1,0 +1,115 @@
+
+header {
+    width: 100% !important;
+    min-height: 100vh !important;
+    background-image: url(/img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+   
+}
+/* =================== HEADER-STYLES =================== */
+
+.navbar .nav-link {
+    color: white!important;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.img-logo{
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.616));
+}
+
+.animation-img{
+    display: inline-block;
+    animation: rodated 5s infinite;
+    animation-direction: alternate;
+}
+
+.acessar-body .btn-acessar{
+    width: 100% !important;
+    border-radius: 8px;
+    color: white !important;
+    font-size: 1.2em;
+    letter-spacing: 5px;
+}
+
+.header-title{
+    margin-top: 18%;
+}
+
+.text-header{
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.16));
+    font-size: 2.6em;
+}
+
+.span-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =================== FIM HEADER-STYLES =================== */
+
+
+/* =================== INTRO-STYLES =================== */
+
+.intro{
+    min-height: 100vh;
+    font-size: 1.3em;
+    font-weight: 1.4;
+}
+.img-intro{
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.527));
+}
+
+/* =================== FIM INTRO-STYLES =================== */
+
+
+
+/* =================== DESKTOP-VERSION=================== */
+@media (min-width: 992px) { 
+
+    @keyframes rodated{
+        from{
+            opacity:0;
+            transform: translateY(0);
+        }
+        50%{
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-800px) rotate(960deg);
+        }
+    }
+    
+}
+/* =================== FIM DESKTOP-VERSION =================== */
+
+
+/* =================== MOBILE-VERSION=================== */
+
+@media (max-width: 576px) { 
+    
+    .navbar .nav-link {
+        text-align: center !important;
+    }
+
+    .img-animation{
+        opacity: 0;
+    }
+    
+    .nav-pills{
+        text-align: center !important;
+    }
+
+    .tab-content{
+        text-align: center !important;
+    }
+
+}
+
+/* =================== FIM MOBILE-VERSION=================== */
