@@ -23,12 +23,6 @@ header {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.616));
 }
 
-.animation-img{
-    display: inline-block;
-    animation: rodated 5s infinite;
-    animation-direction: alternate;
-}
-
 .acessar-body .btn-acessar{
     width: 100% !important;
     border-radius: 8px;
@@ -68,28 +62,6 @@ header {
 /* =================== FIM INTRO-STYLES =================== */
 
 
-
-/* =================== DESKTOP-VERSION=================== */
-@media (min-width: 992px) { 
-
-    @keyframes rodated{
-        from{
-            opacity:0;
-            transform: translateY(0);
-        }
-        50%{
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-            transform: translateY(-800px) rotate(960deg);
-        }
-    }
-    
-}
-/* =================== FIM DESKTOP-VERSION =================== */
-
-
 /* =================== MOBILE-VERSION=================== */
 
 @media (max-width: 576px) { 
@@ -106,12 +78,17 @@ header {
         text-transform: none !important;
     }
 
+    .img-intro{
+        margin-bottom: 30px;
+    }
+
     .img-animation{
         opacity: 0;
     }
     
     .nav-pills{
         text-align: center !important;
+        margin-bottom: 30px !important;
     }
 
     .tab-content{
