@@ -1,0 +1,48 @@
+body{
+    position: relative;
+    background-image: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.171),
+    rgba(0, 0, 0, 0)),
+    url("/img/puzzle-3155663.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.form-container{
+    padding: 20px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(18, 18, 19, 0.356);
+    border: 2px solid #000000;
+    border-radius: 6px ;
+}
+
+.form-title{
+    text-align: center;
+    color: white;
+    text-shadow: 0.2em 0.2em 0.2em black;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.form-avatar{
+    position: relative;
+    width: 15%;
+    top:-90px;
+}
+
+.form-st{
+    margin-top:  -90px;
+}
+
+@media (min-width: 576px) { 
+
+    .form-avatar{
+        position: relative;
+        width: 20%;
+    }
+}
