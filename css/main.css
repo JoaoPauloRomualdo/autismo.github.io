@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Poppins', sans-serif;
+}
 header {
     width: 100% !important;
     min-height: 100vh !important;
@@ -11,7 +13,6 @@ header {
    
 }
 /* =================== HEADER-STYLES =================== */
-
 .navbar .nav-link {
     color: white!important;
     font-size: 1.2em;
