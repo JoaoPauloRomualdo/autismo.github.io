@@ -13,54 +13,89 @@
 <body class="bg-light">
     <!-- CABEÇALHO -->
     <header>
-        <div class="container">
+        <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
-                <a class="navbar-brand" href="#">
-                    <img class="img-logo" src="../img/logo.png" width="50" height="50" alt="logo" />
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+                <a class="navbar-brand ml-5" href="#">
+                    <img class="img-logo" src="../img/logo.png" width="50" height="50" alt="logo"
+                        title="Voltar ao top" />
                 </a>
                 <button class="navbar-toggler bg-white " type="button" data-toggle="collapse" data-target="#nav"
                     aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#">Início</a>
+                <div class="collapse navbar-collapse mr-5" id="nav">
+                    <ul class="navbar-nav ml-auto lista_menu">
+                        <li class="nav-item">
+                            <a class="nav-link ativo" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Direitos</a>
+                            <a class="nav-link"  href="#">Direitos</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Cuidados</a>
+                            <a class="nav-link"  href="#">Cuidados</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Métados</a>
+                            <a class="nav-link"  href="#">Métados</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Curiosidades</a>
+                            <a class="nav-link"  href="curiosidade.html">Curiosidades</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-3"  href="/src/registro.html">Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn-success btn-acessar">Entrar</a>
+                        </li>
+
                 </div>
             </nav>
-
-            <div class="container header-title">
-                <div class="row">
-                    <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12 text-header">
-                        <p class="font-weight-lighter">
-                            Estima-se que o <span class="font-weight-bold span-text">Brasil,</span><br>
-                            com seus <span class="font-weight-bold span-text ">200 milhões</span> de habitantes,<br>
-                            possui cerca de <span class="font-weight-bold span-text">2 milhões de Autistas.</span>
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 acessar-body">
-                        <div class="col-sm mb-3 ">
-                            <a href="#" class="btn btn-primary btn-acessar">Entrar</a>
+        </div>
+        <div class="container-fluid">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/carosselImg1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Titulo</h5>
+                            <p class="font-weight-lighter">
+                                Estima-se que o <span class="font-weight-bold span-text">Brasil,</span>
+                                com seus <span class="font-weight-bold span-text ">200 milhões</span> de habitantes,
+                                possui cerca de <span class="font-weight-bold span-text">2 milhões de Autistas.</span>
+                            </p>
+                            <a href="#" class="btn btn-success">Saiba Mais</a>
                         </div>
-                        <div class="col-sm">
-                            <a href="/src/registro.html" class="btn btn-primary btn-acessar">Cadastrar</a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/carosselImg1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Second slide label</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="btn btn-success">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/carosselImg3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption">
+                            <h5>Third slide label</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <a href="#" class="btn btn-success">Saiba Mais</a>
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
     </header>
@@ -68,17 +103,16 @@
 
     <main class="p-3 mb-2 mt-5  text-dark">
 
+        <!-- O QUE E AUTISMO -->
         <section>
-
-            <!-- O QUE E AUTISMO -->
             <div class="container intro">
-                <h1 class="text-center bg-primary p-2 mb-3 text-white text-uppercase">
+                <h1 class="intro-title">
                     O que é Autismo ?
                 </h1>
 
                 <div class="row">
                     <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12">
-                        <img src="/img/intro.jpg" alt="intro" class="img-thumbnail img-intro">
+                        <img src="/img/intro.jpg" alt="imagem intro" class="img-thumbnail img-intro">
                     </div>
                     <div class="col-lg-8 col-xl-8 col-md-12 col-sm-12">
                         <p>
@@ -126,17 +160,19 @@
                     </div>
                 </di>
             </div>
-            <!-- FIM O QUE E AUTISMO -->
+        </section>
+        <!-- FIM O QUE E AUTISMO -->
 
-            <!-- AUTISMO EM MULHERES -->
+        <!-- AUTISMO EM MULHERES -->
+        <section id="autismoMulher">
             <div class="container intro">
 
-                <h1 class="text-center bg-primary p-2 mt-5 mb-3 text-white text-uppercase">
+                <h1 class="intro-title">
                     Autismo em Mulheres ?
                 </h1>
                 <div class="row">
                     <div class="col-lg-12 col-xl-4 col-md-12 col-sm-12">
-                        <img src="/img/mulher.jpg" alt="intro" class="img-thumbnail img-intro">
+                        <img src="/img/mulher.jpg" alt="intro" class=" img-thumbnail img-intro">
                     </div>
                     <div class="col-lg-12 col-xl-8 col-md-12 col-sm-12">
                         <p>
@@ -144,16 +180,17 @@
                             que nas meninas. E com isso muitas mulheres podem passar a vida subdiagnosticadas, ou
                             seja, estando em algum dos espectros do autismo mas sem terem o diagnóstico fechado.
                             Normalmente, apenas as meninas com o tipos de autismo mais graves costumam receber o
-                            diagnóstico logo <br>
+                            diagnóstico logo na infância,enquanto outras com níveis mais leves passam “desapercebidas”ou
+                            com diagnósticos errados, como transtorno
+                            <br>
                         </p>
                     </div>
                 </div>
                 <di class="row">
-                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 ">
                         <p>
-                            na infância,enquanto outras com níveis mais leves passam
-                            “desapercebidas”
-                            ou com diagnósticos errados, como transtorno obsessivo compulsivo,
+                            obsessivo compulsivo,transtorno de personalidade limítrofe, agorafobia, entre outros.
+                            “desapercebidas”ou com diagnósticos errados, como transtorno obsessivo compulsivo,
                             transtorno de personalidade limítrofe, agorafobia, entre outros.
                             Isso acontece, geralmente, porque as meninas apresentam menos atitudes restritivas e
                             repetitivas, além de conseguirem “camuflar” melhor os sintomas, imitando comportamentos
@@ -175,21 +212,27 @@
                     </div>
                 </di>
             </div>
-            <!-- FIM AUTISMO EM MULHERES -->
 
-            <!-- TIPOS DE AUTISMO -->
+        </section>
+        <!-- FIM AUTISMO EM MULHERES -->
+
+        <!-- TIPOS DE AUTISMO -->
+        <section id="tiposDeAutismo">
+
             <div class="container intro">
-                <h1 class="text-center bg-primary p-2 mb-3 text-white text-uppercase ">
+                <h1 class="intro-title">
                     Quais tipos de Autismo existe ?
                 </h1>
                 <div class="row">
                     <div class="col-xl-3 col-md-12 col-sm-12">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                        <div class="nav flex-column nav-pills " id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
-                            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
-                                aria-controls="v-pills-home" aria-selected="true">Síndrome de Asperger</a>
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                                role="tab" aria-controls="v-pills-home" aria-selected="true">Síndrome de
+                                Asperger</a>
                             <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
-                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Transtorno Invasivo do
+                                role="tab" aria-controls="v-pills-profile" aria-selected="false">Transtorno Invasivo
+                                do
                                 Desenvolvimento</a>
                             <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
                                 role="tab" aria-controls="v-pills-messages" aria-selected="false">Transtorno Autista</a>
@@ -203,13 +246,17 @@
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
                                 <p>
-                                    É considerada a forma mais leve entre os tipos de autismo e é três vezes mais comum
+                                    É considerada a forma mais leve entre os tipos de autismo e é três vezes mais
+                                    comum
                                     em meninos do que em meninas. Normalmente, quem possui a síndrome conta com uma
-                                    inteligência bastante superior à média e pode ser chamado também de “autismo de alto
+                                    inteligência bastante superior à média e pode ser chamado também de “autismo de
+                                    alto
                                     funcionamento”.
-                                    Também é normal que esse autista se torne extremamente obsessivo por um objeto ou um
+                                    Também é normal que esse autista se torne extremamente obsessivo por um objeto
+                                    ou um
                                     único assunto – e passe horas discutindo ou falando sobre o assunto.
-                                    Se a Síndrome não for diagnosticada na infância, o adulto com Asperger poderá ter
+                                    Se a Síndrome não for diagnosticada na infância, o adulto com Asperger poderá
+                                    ter
                                     mais chances de desenvolver quadros depressivos e de ansiedade.
 
                                 </p>
@@ -217,13 +264,16 @@
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
                                 <p>
-                                    Essa é uma “fase intermediária”, já que ela é um pouco mais grave que a Síndrome de
+                                    Essa é uma “fase intermediária”, já que ela é um pouco mais grave que a Síndrome
+                                    de
                                     Asperger, mas não tão forte quanto o Transtorno Autista.
-                                    Nesse caso, os sintomas são muito variáveis. Porém, de uma maneira geral o paciente
+                                    Nesse caso, os sintomas são muito variáveis. Porém, de uma maneira geral o
+                                    paciente
                                     apresentará: <br>
                                     • Quantidade menor de comportamentos repetitivos; <br>
                                     • Dificuldades com a interação social; <br>
-                                    • Competência linguística inferior à Síndrome de Asperger mas superior ao Transtorno
+                                    • Competência linguística inferior à Síndrome de Asperger mas superior ao
+                                    Transtorno
                                     Autista.
                                 </p>
 
@@ -232,12 +282,14 @@
                                 aria-labelledby="v-pills-messages-tab">
 
                                 <p>
-                                    São aqueles que apresentam sintomas mais graves que os dois outros tipos de autismo.
+                                    São aqueles que apresentam sintomas mais graves que os dois outros tipos de
+                                    autismo.
                                     Neste caso, várias capacidades são afetadas de forma mais intensa, como os
                                     relacionamentos sociais, a cognição e a linguística. Outro fator bem comum é a
                                     presença intensificada dos comportamentos repetitivos. <br>
                                     Esse é o tipo “clássico” de autismo e que costuma ser diagnosticado de forma
-                                    precoce, em geral antes dos 3 anos. Os principais sinais que indicam a condição são:
+                                    precoce, em geral antes dos 3 anos. Os principais sinais que indicam a condição
+                                    são:
                                     <br>
                                     • falta de contato com os olhos; <br>
                                     • comportamentos repetitivos como bater ou balançar as mãos; <br>
@@ -250,7 +302,8 @@
 
                                 <p>
                                     É considerado o tipo mais grave do espectro autista e o menos comum. Em geral, a
-                                    criança apresenta um período normal de desenvolvimento, porém a partir dos 2 aos 4
+                                    criança apresenta um período normal de desenvolvimento, porém a partir dos 2 aos
+                                    4
                                     anos de idade, ela passa a perder as habilidades intelectuais, linguísticas e
                                     sociais sem conseguir recuperá-las. <br>
                                 </p>
@@ -260,8 +313,9 @@
                     </div>
                 </div>
             </div>
-            <!-- FIM TIPOS AUTISMO -->
+
         </section>
+        <!-- FIM TIPOS AUTISMO -->
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -272,6 +326,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 

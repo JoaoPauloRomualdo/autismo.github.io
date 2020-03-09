@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .inicio{
+            margin-bottom: 20px;
+            padding: 40px;
+            margin-top: 150px;
+            border: 1px solid rgba(0, 0, 0, 0.733);
+            border-radius: 4px;
+            box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.548);
+        }
+        .img-fluid{
+            height: 50vh;
+        }
+        #mais {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+                <a class="navbar-brand ml-5" href="#">
+                    <img class="img-logo" src="../img/logo.png" width="50" height="50" alt="logo"
+                        title="Voltar ao top" />
+                </a>
+                <button class="navbar-toggler bg-white " type="button" data-toggle="collapse" data-target="#nav"
+                    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mr-5" id="nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Direitos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Cuidados</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">Métados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ativo" href="#">Curiosidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-3" href="/src/registro.html">Cadastrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link btn-success  btn-acessar">Entrar</a>
+                        </li>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM CABEÇALHO -->
+
+    <main>
+        <div class="container ">
+            <section>
+                <div class="row inicio">
+                    <div class="col-sm-12 mb-5 text-center">
+                        <img src="/img/teste.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-12 mb-5 text-center text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
+                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
+                        alias
+                        pariatur minima! <br>
+                        pariatur minima !
+                        <span id="pontos">...</span><span id="mais">
+                            id vel beatae quod, temporibus molestiae dolorum adipisci dolor maiores dolores quas animi
+                            ducimus.Nesciunt
+                            aspernatur voluptate saepe aperiam illo assumenda, debitis esse similique quam est incidunt odit error
+                            possimus
+                            cupiditate praesentium ipsa dignissimos illum facere laborum in molestiae vel ad expedita. Fugiat,
+                            dolor!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit impedit excepturi quo ducimus ea labore
+                            debitis
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam molestiae minus iste impedit
+                            consequatur
+                            tenetur accusamus dolore, vel illo quas mollitia nihil laudantium assumenda facilis sequi eos architecto
+                            similique.
+                            Provident ipsum recusandae illum atque obcaecati deserunt sapiente animi laborum consequatur facere,
+                            molestiae, dolore, neque dolor fugiat beatae! Alias soluta vitae necessitatibus illo ab officiis in!
+                            Error
+                            eligendi tempora sed.
+                            Deserunt, ullam a maiores facilis doloribus iusto velit rem dolorem sequi rerum, blanditiis deleniti
+                            nesciunt quod mollitia debitis quisquam non iste numquam ratione libero eos animi. Commodi culpa sit
+                            expedita! doloribus obcaecati dolorum vitae laborum, numquam tempora nihil eum assumenda. Quis ea fugiat
+                            assumenda? </span> <br>
+                        <button id="btnLeiaMais" onclick="leiaMais()">ler mais</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-sm-12 mb-5 text-center img">
+                        <img src="/img/teste.jpg" class="img-fluid" alt="" style="width: 50%;">
+                    </div>
+                    <div class="col-sm-12 mb-5 text-center text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
+                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
+                        alias
+
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-sm-12 mb-5 text-center img">
+                        <img src="/img/teste.jpg" class="img-fluid" alt="" style="width: 50%;">
+                    </div>
+                    <div class="col-sm-12 mb-5 text-center text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
+                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
+                        alias
+                        pariatur minima! <br>
+                        <button class="text-center">Leia Mais</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-sm-12 mb-5 text-center img">
+                        <img src="/img/teste.jpg" class="img-fluid" alt="" style="width: 50%;">
+                    </div>
+                    <div class="col-sm-12 mb-5 text-center text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
+                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
+                        alias
+                        pariatur minima! <br>
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <main class="p-3 mb-2 mt-5  text-dark">
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>

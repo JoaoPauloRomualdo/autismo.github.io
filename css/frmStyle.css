@@ -33,6 +33,9 @@ body{
 }
 
 .form-avatar{
+    border: 2px solid black;
+    border-radius: 50%;
+    clip-path: circle(60%);
     position: relative;
     width: 15%;
     top:-90px;

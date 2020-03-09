@@ -1,19 +1,14 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
-header {
-    width: 100% !important;
-    min-height: 100vh !important;
-    background-image: url(/img/fundo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    color: white;
-   
-}
+
 /* =================== HEADER-STYLES =================== */
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
 .navbar .nav-link {
+    padding: 0 20px !important;
     color: white!important;
     font-size: 1.2em;
     font-weight: 500;
@@ -24,12 +19,8 @@ header {
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.616));
 }
 
-.acessar-body .btn-acessar{
-    width: 100% !important;
-    border-radius: 8px;
-    color: white !important;
-    font-size: 1.2em;
-    letter-spacing: 5px;
+.btn-acessar{
+    border-radius: 3px;
 }
 
 .header-title{
@@ -40,15 +31,31 @@ header {
     filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.16));
     font-size: 2.6em;
 }
+.ativo{
+    background-color: #2f00ff;
+    border-radius: 4px;
+    color:white !important;
+}
 
-.span-text{
-    font-family: Arial, Helvetica, sans-serif;
+.btn-acessar:hover{
+    background-color: white !important;
 }
 
 /* =================== FIM HEADER-STYLES =================== */
 
 
 /* =================== INTRO-STYLES =================== */
+
+.intro-title{
+    border-right: 5px solid #007bff;
+    border-left: 5px solid #007bff;
+    padding: 10px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow:1px 1px 9px rgba(50, 50, 50, 0.77)
+}
 
 .intro{
     min-height: 100vh;
@@ -96,6 +103,7 @@ header {
         text-align: center !important;
     }
 
+    
 }
 
 /* =================== FIM MOBILE-VERSION=================== */
