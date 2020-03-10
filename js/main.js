@@ -12,9 +12,9 @@ function voltar() {
 
 //FUNÇÃO LER MAIS => ABA CURIOSIDADE
 function leiaMais(){
-    let pontos = document.getElementById("pontos");
-    let maisTexto = document.getElementById("mais");
-    let btnLeiaMais = document.getElementById("btnLeiaMais");
+    let pontos = document.getElementsByClassName("pontos");
+    let maisTexto = document.getElementsByClassName("mais");
+    let btnLeiaMais = document.getElementsByClassName("btnLeiaMais");
 
     if(pontos.style.display ==="none"){
         pontos.style.display="inline";

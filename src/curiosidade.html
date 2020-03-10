@@ -8,30 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <style>
-        .inicio{
-            margin-bottom: 20px;
-            padding: 40px;
-            margin-top: 150px;
-            border: 1px solid rgba(0, 0, 0, 0.733);
-            border-radius: 4px;
-            box-shadow: 4px 4px 4px  rgba(0, 0, 0, 0.548);
-        }
-        .img-fluid{
-            height: 50vh;
-        }
-        #mais {
-            display: none;
-        }
-    </style>
+
 </head>
 
-<body class="bg-light">
+<body>
     <!-- CABEÇALHO -->
     <header>
         <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
                 <a class="navbar-brand ml-5" href="#">
                     <img class="img-logo" src="../img/logo.png" width="50" height="50" alt="logo"
                         title="Voltar ao top" />
@@ -40,10 +25,10 @@
                     aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse mr-5" id="nav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="index.html">Início</a>
+                <div class="collapse navbar-collapse ml-5" id="nav">
+                    <ul class="navbar-nav col-lg-6 col-xl-6 col-md-6 col-sm-12 ">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Direitos</a>
@@ -54,16 +39,16 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="#">Métados</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ativo" href="#">Curiosidades</a>
+                        <li class="nav-item ">
+                            <a class="nav-link ativo" href="curiosidade.html">Curiosidades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mr-3" href="/src/registro.html">Cadastrar</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link btn-success  btn-acessar">Entrar</a>
-                        </li>
-
+                    </ul>
+                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 d-flex justify-content-end">
+                        <button class="btn btn-success btn-acessar mr-3" type="submit">Entrar</button>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -71,83 +56,57 @@
     <!-- FIM CABEÇALHO -->
 
     <main>
-        <div class="container ">
-            <section>
-                <div class="row inicio">
-                    <div class="col-sm-12 mb-5 text-center">
-                        <img src="/img/teste.jpg" class="img-fluid" alt="">
+        <div class="container bg-light ">
+            <section id="Celebridades">
+                <div class="row d-flex justify-content-center begin">
+                    <div class="col-12">
+                        <h1 class="p-2">Celebridades</h1>
                     </div>
-                    <div class="col-sm-12 mb-5 text-center text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
-                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
-                        alias
-                        pariatur minima! <br>
-                        pariatur minima !
-                        <span id="pontos">...</span><span id="mais">
-                            id vel beatae quod, temporibus molestiae dolorum adipisci dolor maiores dolores quas animi
-                            ducimus.Nesciunt
-                            aspernatur voluptate saepe aperiam illo assumenda, debitis esse similique quam est incidunt odit error
-                            possimus
-                            cupiditate praesentium ipsa dignissimos illum facere laborum in molestiae vel ad expedita. Fugiat,
-                            dolor!
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit impedit excepturi quo ducimus ea labore
-                            debitis
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam molestiae minus iste impedit
-                            consequatur
-                            tenetur accusamus dolore, vel illo quas mollitia nihil laudantium assumenda facilis sequi eos architecto
-                            similique.
-                            Provident ipsum recusandae illum atque obcaecati deserunt sapiente animi laborum consequatur facere,
-                            molestiae, dolore, neque dolor fugiat beatae! Alias soluta vitae necessitatibus illo ab officiis in!
-                            Error
-                            eligendi tempora sed.
-                            Deserunt, ullam a maiores facilis doloribus iusto velit rem dolorem sequi rerum, blanditiis deleniti
-                            nesciunt quod mollitia debitis quisquam non iste numquam ratione libero eos animi. Commodi culpa sit
-                            expedita! doloribus obcaecati dolorum vitae laborum, numquam tempora nihil eum assumenda. Quis ea fugiat
-                            assumenda? </span> <br>
-                        <button id="btnLeiaMais" onclick="leiaMais()">ler mais</button>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="row">
-                    <div class="col-sm-12 mb-5 text-center img">
-                        <img src="/img/teste.jpg" class="img-fluid" alt="" style="width: 50%;">
-                    </div>
-                    <div class="col-sm-12 mb-5 text-center text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
-                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
-                        alias
+                    <div class="col-sm-5 card mx-auto ">
+                        <img src="/img/messi.jpg" class="card-img-top img-cele" alt="messi">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">LIONEL MESSI</h5>
+                            <p class="card-text">
+                                Considerado por muitos o melhor jogador de futebol do mundo e por tantos outros, o
+                                melhor jogador de futebol da história, o comportamento recluso e bastante tímido de
+                                Messi desde o início de sua carreira chama a atenção<span id="pontos">...</span>
+                                <span id="mais">
+
+                                    Aos 8 anos de idade, ainda na Argentina e longe do foco e da fama ganha em
+                                    Barcelona,
+                                    Messi foi diagnosticado com Síndrome de Asperger, uma forma mais leve de autismo – a
+                                    mesma de Mozart e alguns outros famosos.
+
+
+                                </span></p>
+                            <button class="btn btn-primary" id="btnLeiaMais " onclick="leiaMais()">Ler Mais</button>
+                        </div>
 
                     </div>
                 </div>
-            </section>
-            <section>
                 <div class="row">
-                    <div class="col-sm-12 mb-5 text-center img">
-                        <img src="/img/teste.jpg" class="img-fluid" alt="" style="width: 50%;">
-                    </div>
-                    <div class="col-sm-12 mb-5 text-center text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
-                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
-                        alias
-                        pariatur minima! <br>
-                        <button class="text-center">Leia Mais</button>
+                    <div class="col-sm-5 card mx-auto ">
+                        <img src="/img/teste.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
                     </div>
                 </div>
             </section>
+
+            <section id="filmes e series desenhos">
+
+            </section>
+
+            <section id="">
+
+            </section>
+
             <section>
-                <div class="row">
-                    <div class="col-sm-12 mb-5 text-center img">
-                        <img src="/img/teste.jpg" class="img-fluid" alt="" style="width: 50%;">
-                    </div>
-                    <div class="col-sm-12 mb-5 text-center text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, impedit ab? Aperiam ipsa,
-                        exercitationem quis a quod quas debitis reiciendis soluta sed! Ipsam quaerat quae officiis sit
-                        alias
-                        pariatur minima! <br>
-                        <button>Leia Mais</button>
-                    </div>
-                </div>
+
             </section>
         </div>
     </main>

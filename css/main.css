@@ -7,9 +7,12 @@
     background-color: rgba(0, 0, 0, 0.616);
 }
 
+.navbar{
+    background-color: #191970;
+}
+
 .navbar .nav-link {
-    padding: 0 20px !important;
-    color: white!important;
+    color: rgba(255, 255, 255, 0.534) !important;
     font-size: 1.2em;
     font-weight: 500;
     text-transform: uppercase;
@@ -19,9 +22,6 @@
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.616));
 }
 
-.btn-acessar{
-    border-radius: 3px;
-}
 
 .header-title{
     margin-top: 18%;
@@ -31,14 +31,24 @@
     filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.16));
     font-size: 2.6em;
 }
-.ativo{
-    background-color: #2f00ff;
-    border-radius: 4px;
-    color:white !important;
-}
 
-.btn-acessar:hover{
-    background-color: white !important;
+.navbar .nav-link:hover{
+    color: white !important;
+}
+.navbar-nav a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    border-bottom: 1px solid white;
+    display: block;
+    margin: auto;
+    transition: .2s;
+}  
+.navbar-nav a:hover:after {
+    width: 100%;
+}
+.navbar-nav .ativo{
+    color: rgb(255, 255, 255) !important;
 }
 
 /* =================== FIM HEADER-STYLES =================== */
@@ -61,6 +71,7 @@
     min-height: 100vh;
     font-size: 1.3em;
     font-weight: 1.4;
+    margin-top: 40px;
 }
 .img-intro{
     max-width: 100%;
@@ -69,19 +80,37 @@
 
 /* =================== FIM INTRO-STYLES =================== */
 
+/* =================== INICIO CURIOSIDADES-STYLES =================== */
+
+.begin{
+    margin-top: 150px;
+}
+.card{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.657);
+}
+#mais{
+    display: none;
+}
+
+/* =================== FIM CURIOSIDADES-STYLES =======================*/
+
 
 /* =================== MOBILE-VERSION=================== */
 
-@media (max-width: 576px) { 
+@media (max-width: 767.98px) { 
     
     *{
         font-size: 1em;
     }
 
     .navbar .nav-link {
+        padding: 10px !important;
         text-align: center !important;
     }
 
+    .btn-acessar{
+        width: 100%;
+    }
     .intro h1 {
         text-transform: none !important;
     }
@@ -89,21 +118,25 @@
     .img-intro{
         margin-bottom: 30px;
     }
-
-    .img-animation{
-        opacity: 0;
-    }
-    
+  
     .nav-pills{
         text-align: center !important;
         margin-bottom: 30px !important;
     }
-
-    .tab-content{
-        text-align: center !important;
+    .tab-content .tab-pane{
+        text-align: start !important;
     }
 
-    
+    .pill-bg{
+        margin-bottom: 20px;
+        padding: 15px !important;
+        background-color:white;
+        border-radius: 6px;
+        box-shadow: 4px 4px 0px black;
+    }
+    .carousel{
+        margin-top: 75px !important;
+    }
 }
 
 /* =================== FIM MOBILE-VERSION=================== */
