@@ -10,24 +10,24 @@ function voltar() {
 
 }
 
-//FUNÇÃO LER MAIS => ABA CURIOSIDADE
-function leiaMais(){
-    let pontos = document.getElementsByClassName("pontos");
-    let maisTexto = document.getElementsByClassName("mais");
-    let btnLeiaMais = document.getElementsByClassName("btnLeiaMais");
-
-    if(pontos.style.display ==="none"){
-        pontos.style.display="inline";
-        maisTexto.style.display="none";
-        btnLeiaMais.innerHTML="Leia Mais";  
+// esta função faz com que quando a pagina for rolada apareça o botão
+onscroll = function(){
+    scroll()
+}
+// esta função scroll faz com que o botao apareça e  desapareça
+function scroll (){
+    let btn = document.getElementById("btnTop")
+    if(document.documentElement.scrollTop > 50){
+        btn.style.display = "block"    
     }
     else{
-        pontos.style.display="none";
-        maisTexto.style.display="inline";
-        btnLeiaMais.innerHTML="Leia Menos"; 
+        btn.style.display = "none"
     }
 }
-
+//esta função faz que a pagina volte ao topo ela deve ser chamada no evento onclick do botao
+function voltaTop(){
+    document.documentElement.scrollTop = 0;
+}
 
 
 
