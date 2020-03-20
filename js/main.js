@@ -1,14 +1,3 @@
-//FUNÇÕES DO FORMULARIO
-
-function limpar() {
-    document.getElementsByClassName('limpar').value = "";
-}
-
-function voltar() {
-
-    setTimeout(function () { window.location.href = "index.html"; }, 2000);
-
-}
 
 // esta função faz com que quando a pagina for rolada apareça o botão
 onscroll = function(){
@@ -16,6 +5,9 @@ onscroll = function(){
 }
 // esta função scroll faz com que o botao apareça e  desapareça
 function scroll (){
+    onscroll = function(){
+        scroll()
+    }
     let btn = document.getElementById("btnTop")
     if(document.documentElement.scrollTop > 50){
         btn.style.display = "block"    

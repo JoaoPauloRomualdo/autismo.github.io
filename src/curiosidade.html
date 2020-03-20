@@ -25,8 +25,8 @@
                     aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse ml-5" id="nav">
-                    <ul class="navbar-nav col-lg-6 col-xl-6 col-md-6 col-sm-12 ">
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav col-lg-6 col-xl-6 col-md-12 col-sm-12 ">
                         <li class="nav-item">
                             <a class="nav-link " href="index.html">Início</a>
                         </li>
@@ -39,14 +39,22 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="#">Métados</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link ativo" href="curiosidade.html">Curiosidades</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="curiosidade.html" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Curiosidades
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#manifestacoes">Manifestações</a>
+                                <a class="dropdown-item" href="#celebridades">celebridades</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mr-3" href="/src/registro.html">Cadastrar</a>
                         </li>
                     </ul>
-                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 d-flex justify-content-end">
+                    <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 d-flex justify-content-end">
                         <button class="btn btn-success btn-acessar mr-3" type="submit">Entrar</button>
                     </div>
                 </div>
@@ -56,7 +64,7 @@
     <!-- FIM CABEÇALHO -->
 
     <main>
-        <section class="p-4" id="algumas-curiosidades">
+        <section class="p-4" id="curiosidades">
             <div class="container curiosidade bg-light">
 
                 <div class="row">
@@ -119,37 +127,37 @@
                 </div>
         </section>
 
-        <section class="p-4" id="manifestações">
+        <section class="p-4" id="manifestacoes">
             <div class="container curiosidade bg-light">
-                <div class="row d-flex align-items-center">
-                    <div class="col-sm-12">
+                <div class="row d-flex align-items-center ">
+                    <div class="col-lg-12 col-xl-12 col-md-12 col-sm-12">
                         <h1 class="mb-5 mt-5 text-center">Manifestações comuns no autismo</h1>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/bebe.svg" class="img-fluid" alt="bebe">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle rounded-circle">1</span><br>
                             O bebé não imita não compartilha sentimentos ou sensações
                         </p>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/triste.svg" class="img-fluid" alt="Triste">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">2</span><br>
                             Não aprende a se comunicar com gestos comuns ,como acenar
                         </p>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/juntos.svg" class="img-fluid" alt="pessoas juntas">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">3</span><br>
                             A criança não procura o contato ocular ou mantém
@@ -157,41 +165,41 @@
                         </p>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/social.svg" class="img-fluid" alt="pai e filho">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">4</span><br>
                             Tem dificuldade para interagir socialmente.
                         </p>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/mae.svg" class="img-fluid" alt="mae e filho">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">5</span><br>
                             Não atende quando chamado pelo nome
                         </p>
                     </div>
-                    
-                    <div class="col-sm-3 mb-5">
+
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/boneca.svg" class="img-fluid" alt="crianca brincando">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">6</span><br>
-                            Mantém comportamento repetitivos e sem 
+                            Mantém comportamento repetitivos e sem
                             finalidade aparente
                         </p>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/carinho.svg" class="img-fluid" alt="crianca com carrinho">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">7</span><br>
                             Fica horas com um objeto fazneo o mesmo movimento
@@ -199,28 +207,156 @@
                         </p>
                     </div>
 
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <img src="/img/alimentacao.svg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-sm-3 mb-5">
+                    <div class="col-lg-3 col-xl-3 col-md-12 col-sm-12 mb-5">
                         <p class="text-info">
                             <span class="numberStyle">8</span><br>
-                            Tem problemas de alimentação com recusa ou 
+                            Tem problemas de alimentação com recusa ou
                             gosto retristo a poucos alimentos
                         </p>
                     </div>
                 </div>
             </div>
 
-
         </section>
 
-        <section id="Celebridades">
+        <section class="p-4" id="celebridades">
 
+            <div class="container curiosidade bg-light">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="mb-5 mt-5 text-center">Conheça famosos que estão dentro do espectro autista</h1>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <h1 class="text-center">Anthony Hopkins</h1>
+                </div>
+
+                <div class="row d-flex align-items-center ">
+                    <div class="col-sm-4">
+                        <img src="../img/anthony.jpg" class="img-fluid img-allstar" alt="Anthony Hopkins"
+                            title="Anthony Hopkins">
+                    </div>
+
+                    <div class="col-sm-8">
+                        <p>
+                            Sir Anthony Hopkins, ator, diretor e produtor galês, conhecido mundialmente por
+                            interpretar Hannibal Lecter em O Silêncio dos Inocentes,<strong>tem Asperger, e
+                                incrivelmente não percebeu isso até os 70 anos.</strong> Ele tornou público seu
+                            diagnóstico
+                            de uma maneira muito casual e tranquila para o jornal The Desert Sun, no qual
+                            aproveitou a oportunidade para esclarecer que sua condição nunca seria um
+                            impedimento para o seu trabalho, embora mesmo neste momento de sua vida ele ainda se
+                            pergunte se é isso o que deveria estar fazendo.
+                        </p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center mt-5">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Greta Thunberg</h1>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            A estudante e ativista sueca de 16 anos foi reconhecida por sua participação em
+                            greves estudantis para aumentar a conscientização sobre a mudança climática. Em 14
+                            de março de 2019, três políticos noruegueses propuseram nomear Greta para o Prêmio
+                            Nobel da Paz, não apenas por causa do impacto de sua luta contra a mudança
+                            climática, como por contribuir para evitar futuros conflitos bélicos, diante da
+                            falta de recursos naturais.
+                        </p>
+                        <p>
+                            Ela foi diagnosticada com autismo e <strong>TDAH (transtorno do déficit de atenção e
+                                hiperatividade)</strong> . Inclusive deu uma palestra no TEDx Estocolmo sobre o
+                            autismo,
+                            explicando que, devido ao seu sofrimento, não consegue entender a inação do governo
+                            e dos cidadãos sobre a ameaça climática.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="../img/Greta.png" class="img-fluid img-allstar" alt="Greta Thunberg"
+                            title="Greta Thunberg">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <h1 class="text-center">Susan Boyle</h1>
+                </div>
+                <div class="row d-flex align-items-center ">
+                    <div class="col-sm-4">
+                        <img src="../img/susan.jpeg" class="img-fluid img-allstar" alt="Susan Boyle"
+                            title="Susan Boyle">
+                    </div>
+
+                    <div class="col-sm-8">
+                        <p>
+                            A cantora escocesa que abalou o mundo depois de sua incrível apresentação musical no
+                            Britain’s Got Talent, além de lançar o álbum de estreia mais vendido de todos os
+                            tempos no Reino Unido, tem <strong>Asperger e um QI acima da média. </strong>
+                        </p>
+                        <p>
+                            Boyle foi diagnosticada na idade adulta, especificamente em 2012, o que foi um
+                            alívio para ela. A cantora
+                            foi marcada em grande parte de sua vida por um diagnóstico errado após o nascimento,
+                            acreditando que, tendo sido privada de oxigênio, devido a complicações no parto,
+                            tinha um distúrbio de aprendizagem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center mt-5">
+                    <div class="col-sm-12">
+                        <h1 class="text-center">Lionel Messi</h1>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Gênio inquestionável do futebol, para muitos já no patamar de Diego Armando Maradona e Pelé,
+                            o argentino Lionel Messi, dono das últimas Bolas de Ouro da Fifa, pode sofrer de uma
+                            forma leve de autismo, a <strong>síndrome de Asperger. </strong>
+
+                            A revelação bombástica foi feita pelo escritor Roberto Amado, sobrinho de Jorge Amado e
+                            autor do livro Poucas Palavras, em um artigo publicado na internet.
+
+                            Segundo Amado, o autismo de Messi ajudou o argentino a se tornar o gênio que é e foi
+                            diagnosticado quando o craque ainda era criança, aos oito anos de idade.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="../img/messi.jpg" class="img-fluid img-allstar" alt="Lionel Messi"
+                            title="Lionel Messi">
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-
+        <section class="p-4" id="filmes">
+            <div class="container curiosidade bg-light">
+                <div class="row justify-content-between pt-5">
+                    <div class="col-sm-6">
+                        <iframe src="https://www.youtube.com/embed/67O6NvrtqTQ" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe src="https://www.youtube.com/embed/N2npSevYhNE" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe src="https://www.youtube.com/embed/5NmpkuD5YUU" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-sm-6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LLUSIO_VkDo" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
         </div>
 
