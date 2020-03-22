@@ -39,21 +39,11 @@
     filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.16));
     font-size: 2.6em;
 }
+
 .navbar .nav-link:hover{
     color: white !important;
 }
-/* .navbar-nav a::after{
-    content: '';
-    width: 0;
-    height: 2px;
-    border-bottom: 1px solid white;
-    display: block;
-    margin: auto;
-    transition: .2s;
-}  
-.navbar-nav a:hover:after{
-    width: 100%;
-} */
+
 
 .navbar-nav .ativo{
     color: rgb(255, 255, 255) !important;
@@ -106,6 +96,29 @@
 .img-allstar{
     min-height: 200px;
 }
+
+.movie{
+    padding-bottom:30px ;
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.616) !important;
+}
+
+.card{
+    display: table;
+    min-width: 335px !important;
+}
+
+.img-movie{
+    width: 335px;
+    height: 488px;
+}
+.cor{
+    position: absolute;
+    height: 100vh;
+    background-color: #17a2b8;
+    clip-path: polygon(50% 0%, 100% 50%, 100% 50%, 50% 100%, 0 50%, 0 50%);
+}
+
 iframe{
     width: 100%;
     height: 315px;
@@ -118,6 +131,8 @@ iframe{
 @media (max-width: 767.98px) { 
     
     *{
+        margin: 0;
+        padding: 0;
         font-size: 1em;
     }
 
@@ -134,12 +149,6 @@ iframe{
         color: white !important;
     }
     
-    .btn-acessar{
-        padding: 10px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
     .intro{
         text-align: start !important;
     }
@@ -167,12 +176,20 @@ iframe{
         border-radius: 6px;
         box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.473);
     }
+    .img-allstar{
+        margin-bottom: 10px !important;
+    }
 
 }
 @media (max-width: 991.98px){
+    
     .img-intro{
         margin-bottom: 30px !important;
     }
+    .img-allstar{
+        margin-bottom: 10px !important;
+    }
+    
     
 }
 /* =================== FIM MOBILE-VERSION=================== */
@@ -194,4 +211,5 @@ iframe{
         text-align: center !important;
         margin-bottom: 30px !important;
     }
+
 }
