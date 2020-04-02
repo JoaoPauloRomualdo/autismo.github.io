@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
+body{
+    text-align: justify !important;
+    color: #25282b;
+}
 #btnTop{
     display: none;
     position: fixed;
@@ -16,7 +20,12 @@
 }
 
 .navbar{
-    background-color: #191970;
+    background-color:#25282b;
+}
+
+.carousel-item img{
+    min-width: 100%;
+    height: 100vh!important;
 }
 
 .navbar .nav-link {
@@ -55,14 +64,17 @@
 /* =================== INTRO-STYLES =================== */
 
 .intro-title{
-    border-right: 5px solid #007bff;
-    border-left: 5px solid #007bff;
+    background-color: white;
+    justify-content: center;
+    border-radius: 8px;
     padding: 10px;
     margin-bottom: 35px;
     padding-left: 15px;
     box-sizing: border-box;
     text-align: center;
-    box-shadow:1px 1px 9px rgba(50, 50, 50, 0.77)
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .intro{
@@ -72,8 +84,9 @@
     margin-top: 40px;
 }
 .img-intro{
-    max-width: 100%;
+    max-width: 50%;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.527));
+    margin-bottom: 20px;
 }
 
 /* =================== FIM INTRO-STYLES =================== */
@@ -84,7 +97,8 @@
 }
 
 .curiosidade{
-    font-size:1.3em;  
+    font-size:1.3em; 
+    border-radius: 8px; 
 }
 
 .numberStyle{
@@ -98,9 +112,15 @@
 }
 
 .movie{
+    width: 95%;
+    margin: 0 auto;
     padding-bottom:30px ;
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.616) !important;
+}
+
+.movie:last-child{
+    border-bottom: none !important;
 }
 
 .card{
@@ -112,12 +132,6 @@
     width: 335px;
     height: 488px;
 }
-.cor{
-    position: absolute;
-    height: 100vh;
-    background-color: #17a2b8;
-    clip-path: polygon(50% 0%, 100% 50%, 100% 50%, 50% 100%, 0 50%, 0 50%);
-}
 
 iframe{
     width: 100%;
@@ -125,7 +139,68 @@ iframe{
 }
 /* =================== FIM CURIOSIDADES-STYLES =======================*/
 
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
+#login{
+    background-image: url('/img/fundoForm.jpeg');
+}
+
+.container-form form{
+    background-color: #12b6b8;
+    padding: 8px;
+    border-radius: 8px;
+    animation: drop 2.5s ease;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.616));
+}
+
+.container-form input{
+    background: none;
+    border-radius: 8px;
+    padding: 5px;
+    outline: none;
+    border:1px solid rgba(0, 0, 0, 0.726) ;
+
+}
+
+
+
+.container-form p  a {
+    color: #25282b;
+    opacity: 0.5;
+}
+
+.frm {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.header-form img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0c5791;
+    padding: 2px;
+}
+
+.container-form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
 /* =================== MOBILE-VERSION=================== */
 
 @media (max-width: 767.98px) { 
@@ -139,7 +214,9 @@ iframe{
     #btnTop{
         display: none !important;
     }
-
+    .navbar{
+        background-color: #25282b;
+    }
     .navbar .nav-link {
         padding: 18px !important;
         text-align: center !important;
@@ -149,16 +226,24 @@ iframe{
         color: white !important;
     }
     
+    .carousel-item img{
+        min-width: 10%;
+        max-height: 50vh;
+    }
+    
     .intro{
-        text-align: start !important;
+        word-wrap: break-word;
+        text-align: justify !important;
     }
 
     .intro h1 {
         text-transform: none !important;
     }
 
-    .img-intro{
-        margin-bottom: 30px !important;
+    .img-intro{   
+        min-width: 50%;
+        margin-bottom: 20px;
+
     }
   
     .nav-pills{
@@ -174,20 +259,34 @@ iframe{
         padding: 15px !important;
         background-color:white;
         border-radius: 6px;
-        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.473);
+        box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
     }
     .img-allstar{
         margin-bottom: 10px !important;
     }
 
+    .container-form{
+        margin: 0 auto;
+        max-width: 95%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
 }
 @media (max-width: 991.98px){
     
+    body{
+        text-align: justify;
+    }
     .img-intro{
-        margin-bottom: 30px !important;
+        max-width: 90%;
+        margin-bottom: 20px;
     }
     .img-allstar{
         margin-bottom: 10px !important;
+    }
+    .carousel-item img{
+        max-width: 100%;
+        max-height: 50vh;
     }
     
     
