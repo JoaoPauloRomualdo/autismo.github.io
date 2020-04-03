@@ -58,17 +58,17 @@
                 <h3>Faça cadastro e tenha total acesso ao nosso site </h3>
             </div>
             <div class="col-sm-12">
-                <form class="form-container">
+                <form class="form-container" action="/TCC/php/cadastro.php" method="POST">
     
                     <div class="form-row form-st">
                         <div class="form-group col-lg-4 col-xl-4  col-md-4 col-sm-12">
                             <label>Nome</label>
-                            <input type="text" class="form-control limpar">
+                            <input type="text" class="form-control limpar" name="nome">
                         </div>
 
                         <div class="form-group col-lg-8 col-xl-8  col-md-8 col-sm-12">
                             <label>Sobrenome</label>
-                            <input type="text" class="form-control limpar">
+                            <input type="text" class="form-control limpar"name="sobreNome">
                         </div>
                     </div>
 
@@ -77,22 +77,22 @@
 
                         <div class="form-group col-lg-6 col-xl-6  col-md-6 col-sm-12 ">
                             <label>Email</label>
-                            <input type="email" class="form-control limpar" placeholder="Digite seu melhor email">
+                            <input type="email" class="form-control limpar" placeholder="Digite seu melhor email" name="email">
                         </div>
                         <div class="form-group col-lg-6 col-xl-6  col-md-6 col-sm-12 ">
                             <label>Senha</label>
-                            <input type="password" class="form-control limpar">
+                            <input type="password" class="form-control limpar" name="senha">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-lg-6 col-xl-6  col-md-6 col-sm-12">
                             <label>Cidade</label>
-                            <input type="text" class="form-control limpar">
+                            <input type="text" class="form-control limpar"name="city" >
                         </div>
                         <div class="form-group col-lg-3 col-xl-3  col-md-3 col-sm-12">
                             <label>Estado</label>
-                            <select id="inputState" class="form-control select-estado">
+                            <select id="inputState" class="form-control select-estado" name="estado">
                                 <option selected>...</option>
                                 <option>AC</option>
                                 <option>AL</option>
@@ -126,19 +126,30 @@
                         </div>
                         <div class="form-group col-lg-3 col-xl-3  col-md-3 col-sm-12">
                             <label>CEP</label>
-                            <input type="number" class="form-control limpar">
+                            <input type="number" class="form-control limpar" name="cep">
                         </div>
 
                         <div class="form-group col-lg-12 col-xl-12  col-md-12 col-sm-12 ">
                             <h5>Você tem casos de autismo proximo a você ?</h5>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                    class="custom-control-input">
+
+                                <input 
+                                    type="radio" 
+                                    id="customRadioInline1" 
+                                    name="caso"
+                                    value="sim"
+                                    class="custom-control-input"
+                                >
                                 <label class="custom-control-label" for="customRadioInline1">Sim</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                    class="custom-control-input">
+                                <input 
+                                    type="radio" 
+                                    id="customRadioInline2" 
+                                    name="caso"
+                                    value="nao"
+                                    class="custom-control-input"
+                                >
                                 <label class="custom-control-label" for="customRadioInline2">Não</label>
                             </div>
                         </div>
@@ -148,7 +159,7 @@
                             <button class="btn btn-success mx-5 limpar" onclick="limpar()"> Limpar</button>
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary">Cadastrar</button>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </div>
                 </form>
